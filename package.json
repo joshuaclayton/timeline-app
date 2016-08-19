@@ -1,0 +1,9 @@
+{
+  "name": "timeline-app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "dependencies": {
+    "highcharts": "^4.2.6",
+    "jquery": "^3.1.0"
+  }
+}
