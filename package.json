@@ -1,9 +1,15 @@
 {
   "name": "timeline-app",
   "version": "0.1.0",
-  "main": "main.js",
+  "main": "app.js",
   "dependencies": {
+    "electron-compile": "^3.3.5",
     "highcharts": "^4.2.6",
     "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "electron-compilers": "^3.1.6"
   }
 }
