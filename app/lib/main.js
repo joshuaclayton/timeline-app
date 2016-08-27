@@ -26,8 +26,8 @@ const generateChart = function(input) {
 };
 
 $(function() {
-  $("#inputs textarea")[0].addEventListener('keydown', function(e) {
-    if(e.keyCode == 13 && e.metaKey) {
+  $("#inputs textarea")[0].addEventListener('keydown', (e) => {
+    if(e.keyCode === 13 && e.metaKey) {
       $("#inputs").submit();
     }
   });

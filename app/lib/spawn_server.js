@@ -2,7 +2,7 @@ const _spawn = require('child_process').spawn;
 const path = require('path');
 const serverPath = path.join(__dirname, '../../bin/timeline-server');
 
-module.exports = function spawn() {
+module.exports = () => {
   const server = _spawn(serverPath);
 
   server.stdout.on('data', (data) => {
