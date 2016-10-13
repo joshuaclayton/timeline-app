@@ -5,7 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "electron-compile": "^3.3.5",
-    "highcharts": "^4.2.6",
+    "highcharts": "^5.0.0",
     "jquery": "^3.1.0",
     "moment": "^2.14.1"
   },
