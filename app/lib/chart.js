@@ -110,7 +110,7 @@ const doesContainScatter = (data) => {
   return data.graphs.filter(a => a._type === "scatter-plot").length > 0;
 };
 
-const generateXAxis = function(data) {
+const generateXAxis = function(startDate, data) {
   if (doesContainScatter(data)) {
     return {};
   } else {
@@ -121,7 +121,7 @@ const generateXAxis = function(data) {
           return moment(this.value).format("MMM YYYY");
         }
       },
-      plotLines: generatePlotlines(START_DATE),
+      plotLines: generatePlotlines(startDate),
     };
   }
 };
@@ -155,7 +155,7 @@ class Chart {
   renderData(data) {
     $(this.selector).highcharts({
       title: { text: null },
-      xAxis: generateXAxis(data),
+      xAxis: generateXAxis(START_DATE, data),
       tooltip: generateTooltip(data),
       series: generateSeriesFromData(START_DATE, DATE_INTERVAL, data),
       plotOptions: {

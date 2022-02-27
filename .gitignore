@@ -1,3 +1,5 @@
 /tmp/*
 /node_modules/*
 /Timeline-darwin-x64
+
+out/
